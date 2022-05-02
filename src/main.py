@@ -40,7 +40,7 @@ def handle_hello():
 
 BASE_URL = "https://www.swapi.tech/api/"
 
-
+#GET Method
 
 @app.route('/people', methods=["GET"])
 def handle_characters():
@@ -66,7 +66,7 @@ def handle_vehicles():
         vehicles
     ))), 200
 
-
+#Handle
 
 @app.route('/people/<int:id>')
 def handle_one_character(id):
